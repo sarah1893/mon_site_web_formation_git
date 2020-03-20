@@ -1,3 +1,99 @@
+<!DOCTYPE html>
 <html>
-    
+    <head>
+        <meta charset="utf-8">
+        <title></title>
+    </head>
+    <body>
+        <form method="GET">
+            <h3> Voulez-vous passer le test ?</h3>
+            <label for="yes">Oui</label>
+            <input type="radio" id="yes" name="test_choice" value="yes">
+            <label for="no">Non</label>
+            <input type="radio" id="no" name="test_choice" value="no">
+        </form>
+        <form novalidate>
+            <h1>HTML5 form</h1> 
+            <!-- Pour le trait-->
+            <hr>
+            <table>
+                <tr>
+                    <td>Nom </td>
+                    <td><input type="text" placeholder="Entrer votre nom entier" required>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Email</td>
+                    <td><input type="email" required autofocus>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Note notre site</td>
+                    <td><input type="number" min="0" max="10">
+                    </td>
+                </tr>
+                <tr>
+                    <td>Note notre site (avec range)</td>
+                    <td><input type="range" min="0" max="10" value="2" step="2">
+                    </td>
+                </tr>
+                <tr>
+                    <td>Choix d'une couleur</td>
+                    <td><input type="color" >
+                    </td>
+                </tr>
+                <tr>
+                    <td>Ton anniversaire</td>
+                    <td><input type="date" min="12-15-1990" max="01-03-2020">
+                    </td>
+                </tr>
+                <tr>
+                    <td>Ton heure d'anniversaire</td>
+                    <td><input type="time">
+                    </td>
+                </tr>
+                <tr>
+                    <td>Entre ton adresse web</td>
+                    <td><input type="url">
+                    </td>
+                </tr>
+                <tr>
+                    <td>Entre ta recherche</td>
+                    <td><input type="search">
+                    </td>
+                </tr>
+                <tr>
+                    <td>Upload ton fichier</td>
+                    <td><input type="file">
+                    </td>
+                </tr>
+                <tr>
+                    <td>Upload tes fichiers (multiple upload)</td>
+                    <td><input type="file" multiple>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Entre ton pays</td>
+                    <td><select><option>Amérique</option>
+                    <option>Brésil</option></select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Entre ton pays avec datalist tag</td>
+                    <td><input list="country_list">
+                        <datalist id="country_list">
+                            <option>Brésil</option>
+                            <option>Canada</option>
+                        </datalist>
+                 
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><input type="submit">
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </body>
 </html>
