@@ -1,25 +1,8 @@
-* {
-  padding: 0;
-  margin: 0;
-}
 
 form {
   margin: 0 auto;
-  width: 400px;
-  height: 600px;
   background: silver;
-  padding: 20px;
 }
-input{
-  width: 250px;
-  height: 30px;
-  margin: 10px;
-  box-shadow: inset 0 0 5px gray;
-  border: 1px solid black;
-}
-
-
-
 
 #top-banner {
     color : rgb(255,255,255);
@@ -34,8 +17,7 @@ input{
     float:right;
   }
   
-  
-  
+
   #menu {
     width: 260px;
     height: 100%;
