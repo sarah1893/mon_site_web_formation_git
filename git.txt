@@ -1,0 +1,98 @@
+# Interface graphique 
+gitk 
+
+# Initialiser un dépôt 
+git init
+# Mettre les fichiers ds le mm dossier que le dossier .git créer 
+
+# Définition de la config
+git config --global user.name "Sarah ALIBAY"
+git config --global user.email alibaymand@eisti.eu
+git config --global --list
+
+# Identification du statut
+git status
+# Indexer ses modifications / Ajout fichiers 
+git add <fichiers> # git add style.css hello.html
+git add . # ajouter tous les fichiers
+
+# Désindexer un fichier 
+git reset hello.html
+git status
+
+git commit -m "Mon premier commit"
+# modification
+git diff 
+git add hello.html
+git diff --cached
+
+# Voir la liste des commits
+git log
+git show <n° sha1 commit>
+git switch <branch_name>
+
+# Créer une branche 
+# avec fermeture 
+git branch <branch_name> +
+git checkout <branch_name> 
+= git checkout -b <branch_name>
+# avec balance sur la new branche 
+git branch <branch_name> + 
+git switch <branch_name> 
+= git switch -c <branch_name>
+# Lister toutes les branches
+git branch 
+# For delete a branch (checkout & )
+git branch -d <branch_name>
+# for delete a branch (distant)
+git push <remote:origin> --delete <branch_name>
+# Pour tagger une branche
+git checkout <sha1> # pr se placer au niveau du commmit voulue
+git tag <tag_name> -m "message"
+# Pr supprimer un tag 
+git tag --delete
+# Pour lister tous les tags 
+git tag
+
+
+git add
+git commit -m "message"
+git checkout <commit>
+git tag 
+git push <remote><branche> # git push -u origin master
+git push <remote><tag>
+# Pusher tous les tags 
+git push --tags
+
+git fetch
+git pull
+
+echo "mon site" >> README.md
+git add .
+git commit -m "#1 : Ajout du README.md"
+git push 
+
+# retour ds le local
+git pull
+git pull --rebase
+# afficher les modifications ds 1 fichier
+git blame <fichier>
+
+
+# Créer une branche
+git branch <branch_name>
+# Se placer sur la branche
+git switch <branch_name>
+git add .
+git commit -m "message"
+git pull # ne fonctionne pas car non sur le repo distant 
+git push --set-upstream origin BRANCHE_A_MERGE
+
+# Copier un commit
+git cherry-pick <sha1>
+
+# faire un rebase entre 2 branches
+git add .
+git rebase --continue
+git switch master
+git merge BRANCH_A_REBASE
