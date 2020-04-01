@@ -11,7 +11,7 @@ Mon site web est un projet pour prendre la main sur *git*.
 ## DEV
 Pour participer au développement du projet :
 - Cloner le repo
-- Ouvrir le fichier 'index.html' 
+- Ouvrir le fichier 'hello.html' 
 - Développer dans une nouvelle branche la feature/fix
 - Push et demander un pull request
 
